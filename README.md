@@ -7,7 +7,6 @@ This simple CLI tool will show rofi dmenus, even nested ones based on simple JSO
 Just create a json file like this: 
 
 ```json
-// menu.json
 {
 	"Power Menu": {
 		"shutdown": "shutdown now",
