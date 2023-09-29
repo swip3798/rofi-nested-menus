@@ -29,11 +29,8 @@ pub fn call_rofi_menu(options: &[String]) -> String {
 }
 
 pub fn call_string_command(command: &str) {
-    let mut command_parts = command.split(' ');
-    let mut com = Command::new(command_parts.next().expect("Command is empty!"));
-    for arg in command_parts {
-        com.arg(arg);
-    }
+    let mut com = Command::new("bash");
+    com.args(["-c", command]);    
     com.status()
         .unwrap_or_else(|e| panic!("Failed to run command, error: {e}",));
 }
