@@ -1,0 +1,7 @@
+{
+	"hello": "echo hello",
+	"firefox": {
+		"hello": "echo hello",
+		"bye": "echo bye"
+	}
+}
