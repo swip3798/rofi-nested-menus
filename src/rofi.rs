@@ -12,6 +12,7 @@ pub fn call_rofi_menu(options: &[String]) -> String {
         com.arg(theme);
     }
     com.arg("-dmenu");
+    com.arg("-i");
     com.stdin(Stdio::piped());
     com.stdout(Stdio::piped());
     let mut child = com.spawn().expect("Rofi command failed");

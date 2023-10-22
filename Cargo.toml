@@ -1,7 +1,7 @@
 [package]
 name = "rofi-menus"
 description = "Simple CLI app that runs nested rofi dmenus based on json files."
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Christian S."]
 license = "MIT"
