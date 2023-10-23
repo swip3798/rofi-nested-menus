@@ -1,10 +1,11 @@
 [package]
 name = "rofi-menus"
 description = "Simple CLI app that runs nested rofi dmenus based on json files."
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Christian S."]
 license = "MIT"
+repository = "https://github.com/swip3798/rofi-nested-menus"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -15,3 +16,4 @@ lazy_static = "1.4.0"
 
 [profile.release]
 lto = true
+strip = true
